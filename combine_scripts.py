@@ -1,20 +1,40 @@
-combine_scripts.py
-import subprocess
+# Merged code from calculations_A.py, calculations_B.py, etc.
+import numpy as np  # Example of importing libraries once
 
-# Define the paths to each script
-scripts = [
-    "calculations_A.py",
-    "calculations_B.py",
-    "calculations_C.py",
-    "calculations_D.py",
-    "calculations_a_d_total.py"
-]
+# calculations_A.py logic
+def step_A():
+    # Logic from calculations_A.py
+    pass
 
-# Run each script in order
-for script in scripts:
-    print(f"Running {script}...")
-    result = subprocess.run(["python", script], capture_output=True, text=True)
-    print(result.stdout)
-    print(result.stderr)
+# calculations_B.py logic
+def step_B():
+    # Logic from calculations_B.py
+    pass
 
-print("All scripts executed successfully.")
+# calculations_C.py logic
+def step_C():
+    # Logic from calculations_C.py
+    pass
+
+# calculations_D.py logic
+def step_D():
+    # Logic from calculations_D.py
+    pass
+
+# calculations_a_d_total.py logic
+def calculate_total():
+    # Logic from calculations_a_d_total.py
+    pass
+
+# Orchestrate the steps
+def main():
+    step_A()
+    step_B()
+    step_C()
+    step_D()
+    calculate_total()
+
+if __name__ == "__main__":
+    main()
+
+
